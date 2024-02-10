@@ -1,0 +1,75 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  font-family: "Tangerine", serif;
+  background-color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#errorCity {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+ 
+#weather-info {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  /* transition: transform 0.1s ease-in-out; */
+}
+
+ 
+#temperature:hover {
+  color: darkblue;
+}
+ 
+
+/*state wise summary*/
+.treenode{ 
+    flex: '1 0 calc(20% - 20px)';  
+    cursor: pointer;
+}
+ 
+
+.negative {
+  color: red !important; 
+}
+
+.cityCharts{
+  display: flex;
+  flex-direction: row;
+  text-align : center;
+
+  
+}
+
+.flex-item-left{
+  flex: 50%;
+  padding-top: 10%;
+  
+}
+
+.flex-item-right{
+  flex: 50%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 620px) {
+  .treenode {
+    flex: '1 0 calc(50% - 20px)'; /* Adjust to display 2 rectangles per line */
+  }
+
+  .cityCharts{
+    flex-direction: column; 
+  }
+}
